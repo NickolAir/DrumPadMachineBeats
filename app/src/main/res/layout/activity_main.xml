@@ -15,16 +15,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
             android:onClick="sound1"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
             android:onClick="sound2"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
             android:onClick="sound3"
             android:layout_width="110dp"
@@ -35,16 +38,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:background="@drawable/green_pad"
             android:layout_margin="5dp"
             android:onClick="sound4"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/puprple_pad"
             android:layout_margin="5dp"
             android:onClick="sound5"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/green_pad"
             android:layout_margin="5dp"
             android:onClick="sound6"
             android:layout_width="110dp"
@@ -55,16 +61,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:background="@drawable/puprple_pad"
             android:layout_margin="5dp"
             android:onClick="sound7"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/orange_pad"
             android:layout_margin="5dp"
             android:onClick="sound8"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/pink_pad"
             android:layout_margin="5dp"
             android:onClick="sound9"
             android:layout_width="110dp"
@@ -75,16 +84,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:background="@drawable/orange_pad"
             android:layout_margin="5dp"
             android:onClick="sound10"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/green_pad"
             android:layout_margin="5dp"
             android:onClick="sound11"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
+            android:background="@drawable/pink_pad"
             android:layout_margin="5dp"
             android:onClick="sound12"
             android:layout_width="110dp"
