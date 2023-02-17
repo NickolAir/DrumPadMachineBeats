@@ -5,100 +5,101 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/mylayout"
     tools:context=".MainActivity"
     android:background="@color/colorPrimary"
     android:padding="10dp"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="horizontal">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <Button
             android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
-            android:onClick="sound1"
+            android:onClick="playsample1"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
-            android:onClick="sound2"
+            android:onClick="playsample2"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/blue_pad"
             android:layout_margin="5dp"
-            android:onClick="sound3"
+            android:onClick="playsample3"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <Button
             android:background="@drawable/green_pad"
             android:layout_margin="5dp"
-            android:onClick="sound4"
+            android:onClick="playsample4"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/puprple_pad"
             android:layout_margin="5dp"
-            android:onClick="sound5"
+            android:onClick="playsample5"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/green_pad"
             android:layout_margin="5dp"
-            android:onClick="sound6"
+            android:onClick="playsample6"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <Button
             android:background="@drawable/puprple_pad"
             android:layout_margin="5dp"
-            android:onClick="sound7"
+            android:onClick="playsample7"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/orange_pad"
             android:layout_margin="5dp"
-            android:onClick="sound8"
+            android:onClick="playsample8"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/pink_pad"
             android:layout_margin="5dp"
-            android:onClick="sound9"
+            android:onClick="playsample9"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <Button
             android:background="@drawable/orange_pad"
             android:layout_margin="5dp"
-            android:onClick="sound10"
+            android:onClick="playsample10"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/green_pad"
             android:layout_margin="5dp"
-            android:onClick="sound11"
+            android:onClick="playsample11"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
         <Button
             android:background="@drawable/pink_pad"
             android:layout_margin="5dp"
-            android:onClick="sound12"
+            android:onClick="playsample12"
             android:layout_width="110dp"
             android:layout_height="110dp"/>
     </LinearLayout>
