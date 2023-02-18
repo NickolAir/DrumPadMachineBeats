@@ -38,55 +38,55 @@ public class MainActivity extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        spool = new SoundPool(2, AudioManager.STREAM_MUSIC, 0);
-        sound1 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound2 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound3 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound4 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound5 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound6 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound7 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound8 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound9 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound10 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound11 = spool.load(getApplicationContext(), R.raw.sound1, 1);
-        sound12 = spool.load(getApplicationContext(), R.raw.sound1, 1);
+        spool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+        sound1 = spool.load(getApplicationContext(), R.raw.loop1, 1);
+        sound2 = spool.load(getApplicationContext(), R.raw.loop2, 1);
+        sound3 = spool.load(getApplicationContext(), R.raw.synth, 1);
+        sound4 = spool.load(getApplicationContext(), R.raw.synth2, 1);
+        sound5 = spool.load(getApplicationContext(), R.raw.synth3, 1);
+        sound6 = spool.load(getApplicationContext(), R.raw.lead, 1);
+        sound7 = spool.load(getApplicationContext(), R.raw.bass, 1);
+        sound8 = spool.load(getApplicationContext(), R.raw.lead2, 1);
+        sound9 = spool.load(getApplicationContext(), R.raw.clap, 1);
+        sound10 = spool.load(getApplicationContext(), R.raw.high_hat, 1);
+        sound11 = spool.load(getApplicationContext(), R.raw.snare, 1);
+        sound12 = spool.load(getApplicationContext(), R.raw.kick, 1);
     }
 
     public void playsample1 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound1, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample2 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound2, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample3 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound3, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample4 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound4, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample5 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound5, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample6 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound6, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample7 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound7, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample8 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound8, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample9 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound9, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample10 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound10, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample11 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound11, 1.0f, 1.0f, 0, 0, 1f);
     }
     public void playsample12 (View v){
-        spool.play(sound, 1.0f, 1.0f, 0, 0, 10f);
+        spool.play(sound12, 1.0f, 1.0f, 0, 0, 1f);
     }
 }
