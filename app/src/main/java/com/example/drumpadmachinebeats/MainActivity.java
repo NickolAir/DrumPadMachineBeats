@@ -2,12 +2,14 @@ package com.example.drumpadmachinebeats;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private SoundPool spool;
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 |View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                 |View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         spool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
         sound1 = spool.load(getApplicationContext(), R.raw.loop1, 1);
@@ -88,5 +90,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void playsample12 (View v){
         spool.play(sound12, 1.0f, 1.0f, 0, 0, 1f);
+    }
+
+    public void gostore(View view) {
+        Intent intent = new Intent(this, StoreActivity.class);
+        startActivity(intent);
+    }
+
+    public void recording(View view) {
     }
 }
