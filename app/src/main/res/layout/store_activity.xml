@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StoreActivity"
     android:id="@+id/store_layout"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
 
 </LinearLayout>

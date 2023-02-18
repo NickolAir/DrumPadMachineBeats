@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int sound10;
     private int sound11;
     private int sound12;
+    Button btnrecord, btnpresset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 |View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                 |View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+
+        btnpresset = findViewById(R.id.btnpresset);
+        btnpresset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                newactivity();
+            }
+        });
 
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
@@ -53,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
         sound10 = spool.load(getApplicationContext(), R.raw.high_hat, 1);
         sound11 = spool.load(getApplicationContext(), R.raw.snare, 1);
         sound12 = spool.load(getApplicationContext(), R.raw.kick, 1);
+    }
+
+    private void newactivity() {
+        Intent intent = new Intent(this, StoreActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 
     public void playsample1 (View v){
@@ -90,13 +105,5 @@ public class MainActivity extends AppCompatActivity {
     }
     public void playsample12 (View v){
         spool.play(sound12, 1.0f, 1.0f, 0, 0, 1f);
-    }
-
-    public void gostore(View view) {
-        Intent intent = new Intent(this, StoreActivity.class);
-        startActivity(intent);
-    }
-
-    public void recording(View view) {
     }
 }
