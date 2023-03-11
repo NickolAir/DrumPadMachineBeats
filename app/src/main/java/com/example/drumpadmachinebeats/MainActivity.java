@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
         spool = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
         sound1 = spool.load(getApplicationContext(), R.raw.loop1, 1);
         sound2 = spool.load(getApplicationContext(), R.raw.loop2, 1);

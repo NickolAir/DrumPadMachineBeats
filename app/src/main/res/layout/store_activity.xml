@@ -7,6 +7,14 @@
     tools:context=".StoreActivity"
     android:id="@+id/store_layout"
     android:orientation="vertical"
+    android:padding="5dp"
     android:background="@color/colorPrimaryDark">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
