@@ -33,13 +33,17 @@ public class StoreActivity extends AppCompatActivity {
                         |View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         lstPresset = new ArrayList<>();
-        lstPresset.add(new Presset("Modern Hip Hop"));
-        lstPresset.add(new Presset("Modern lead"));
-        lstPresset.add(new Presset("Darkness"));
+        lstPresset.add(new Presset("Modern Hip Hop", R.drawable.modernpresset));
+        lstPresset.add(new Presset("Welcome to 80's", R.drawable.classicrock));
+        lstPresset.add(new Presset("Darkness", R.drawable.darkness));
+        lstPresset.add(new Presset("Classic Hip Hop", R.drawable.classichiphop));
+        lstPresset.add(new Presset("Lo-Fi", R.drawable.lofi));
+        lstPresset.add(new Presset("Modern lead", R.drawable.modernlead));
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this, lstPresset);
         myrv.setLayoutManager(new GridLayoutManager(this, 2));
+        myrv.setAdapter(myAdapter);
     }
 
     @Override

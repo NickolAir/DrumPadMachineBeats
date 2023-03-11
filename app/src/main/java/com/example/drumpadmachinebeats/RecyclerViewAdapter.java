@@ -34,7 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.tv_presset_title.setText(mData.get(position).getTitle());
-        //holder.presset_img.setImageResource(mData.get(position).getSound()); !!!!!!!!!!!!!!!!!!!!
+        holder.presset_img.setImageResource(mData.get(position).getPreview());
     }
 
     @Override
